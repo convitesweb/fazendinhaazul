@@ -7,7 +7,11 @@
     <title>Convite - José Gabriel 1 Ano</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -53,20 +57,60 @@
             animation-fill-mode: backwards;
         }
 
-        .trator-caindo:nth-child(1) { left: 5%; animation-duration: 12s; animation-delay: 0s; }
-        .trator-caindo:nth-child(2) { left: 20%; animation-duration: 15s; animation-delay: 2s; }
-        .trator-caindo:nth-child(3) { left: 35%; animation-duration: 10s; animation-delay: 4s; }
-        .trator-caindo:nth-child(4) { left: 50%; animation-duration: 14s; animation-delay: 1s; }
-        .trator-caindo:nth-child(5) { left: 65%; animation-duration: 11s; animation-delay: 3s; }
-        .trator-caindo:nth-child(6) { left: 80%; animation-duration: 13s; animation-delay: 5s; }
-        .trator-caindo:nth-child(7) { left: 92%; animation-duration: 16s; animation-delay: 2.5s; }
-        .trator-caindo:nth-child(8) { left: 12%; animation-duration: 9s; animation-delay: 6s; }
+        .trator-caindo:nth-child(1) {
+            left: 5%;
+            animation-duration: 12s;
+            animation-delay: 0s;
+        }
+
+        .trator-caindo:nth-child(2) {
+            left: 20%;
+            animation-duration: 15s;
+            animation-delay: 2s;
+        }
+
+        .trator-caindo:nth-child(3) {
+            left: 35%;
+            animation-duration: 10s;
+            animation-delay: 4s;
+        }
+
+        .trator-caindo:nth-child(4) {
+            left: 50%;
+            animation-duration: 14s;
+            animation-delay: 1s;
+        }
+
+        .trator-caindo:nth-child(5) {
+            left: 65%;
+            animation-duration: 11s;
+            animation-delay: 3s;
+        }
+
+        .trator-caindo:nth-child(6) {
+            left: 80%;
+            animation-duration: 13s;
+            animation-delay: 5s;
+        }
+
+        .trator-caindo:nth-child(7) {
+            left: 92%;
+            animation-duration: 16s;
+            animation-delay: 2.5s;
+        }
+
+        .trator-caindo:nth-child(8) {
+            left: 12%;
+            animation-duration: 9s;
+            animation-delay: 6s;
+        }
 
         @keyframes cairTrator {
             0% {
                 top: -30px;
                 transform: rotate(0deg);
             }
+
             100% {
                 top: 100%;
                 transform: rotate(360deg);
@@ -94,22 +138,13 @@
             z-index: 1;
         }
 
-        .nome {
-            font-family: "Pacifico", cursive;
-            font-size: 4rem;
-            color: #6aabcc;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-            line-height: 1;
-            margin-top: -5%;
+        .header-img {
+            margin-top: -15%;
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
         }
 
-        .idade {
-            font-family: 'Dancing Script', cursive;
-            font-size: 2.2rem;
-            color: #6aabcc;
-            margin-top: -5px;
-            margin-top: 20px;
-        }
 
         .fazenda-scene {
             position: relative;
@@ -162,6 +197,7 @@
             from {
                 transform: translateX(-50%) rotate(0deg);
             }
+
             to {
                 transform: translateX(-50%) rotate(360deg);
             }
@@ -190,18 +226,22 @@
                 left: -100px;
                 transform: scaleX(1);
             }
+
             45% {
                 left: calc(100% + 100px);
                 transform: scaleX(1);
             }
+
             50% {
                 left: calc(100% + 100px);
                 transform: scaleX(-1);
             }
+
             95% {
                 left: -100px;
                 transform: scaleX(-1);
             }
+
             100% {
                 left: -100px;
                 transform: scaleX(1);
@@ -213,6 +253,14 @@
             padding: 25px 20px;
             margin-top: -5px;
             z-index: 0;
+        }
+
+        .info-section p {
+            text-align: center;
+            font-family: 'Merriweather', serif;
+            font-size: 1.1rem;
+            color: #3d5a28;
+            margin-bottom: 15px;
         }
 
         .info-row {
@@ -406,9 +454,12 @@
         }
 
         @keyframes balancar {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateX(-50%) rotate(-3deg);
             }
+
             50% {
                 transform: translateX(-50%) rotate(3deg);
             }
@@ -424,9 +475,12 @@
         }
 
         @keyframes pular {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(0);
             }
+
             50% {
                 transform: translateY(-8px);
             }
@@ -442,15 +496,20 @@
         }
 
         @keyframes pularLado {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateX(0) translateY(0);
             }
+
             25% {
                 transform: translateX(15px) translateY(-6px);
             }
+
             50% {
                 transform: translateX(30px) translateY(0);
             }
+
             75% {
                 transform: translateX(15px) translateY(-6px);
             }
@@ -466,29 +525,26 @@
         }
 
         @keyframes pularLadoOposto {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateX(0) translateY(0);
             }
+
             25% {
                 transform: translateX(-15px) translateY(-6px);
             }
+
             50% {
                 transform: translateX(-30px) translateY(0);
             }
+
             75% {
                 transform: translateX(-15px) translateY(-6px);
             }
         }
 
         @media (max-width: 480px) {
-            .nome {
-                font-size: 3rem;
-            }
-
-            .idade {
-                font-size: 1.8rem;
-            }
-
             .header p {
                 font-size: 1.2rem;
             }
@@ -532,14 +588,13 @@
             <img src="imagens/Trator.png" alt="" class="trator-caindo">
         </div>
         <div class="header">
-            <p>
+            <!-- <p>
                 Você está convidado para festa na fazendinha do
-            </p>
+            </p> -->
         </div>
 
         <div class="nome-section">
-            <h1 class="nome">José Gabriel</h1>
-            <p class="idade">1 ano</p>
+            <img src="imagens/header.png" alt="Nome e idade do aniversariante" class="header-img">
         </div>
 
         <div class="fazenda-scene">
@@ -554,6 +609,9 @@
         </div>
 
         <div class="info-section">
+            <p>
+                Você está sendo convidado para minha festinha.
+            </p>
             <div class="info-row">
                 <div class="info-box">
                     <span class="label">Data</span>
@@ -595,7 +653,8 @@
         </div>
 
         <div class="botoes">
-            <a href="https://wa.me/5582993715533?text=Obrigado%20pelo%20convite%2C%20pode%20contar%20com%20a%20minha%20presen%C3%A7a%20para%20a%20festinha%20do%20Jo%C3%A3o%20Gabriel" target="_blank" class="btn btn-confirmar">Confirmar</a>
+            <a href="https://wa.me/5582993715533?text=Obrigado%20pelo%20convite%2C%20pode%20contar%20com%20a%20minha%20presen%C3%A7a%20para%20a%20festinha%20do%20Jo%C3%A3o%20Gabriel"
+                target="_blank" class="btn btn-confirmar">Confirmar</a>
             <a href="avisos.html" class="btn btn-avisos">Avisos</a>
         </div>
 
@@ -645,7 +704,7 @@
         const musica = document.getElementById('musicaFundo');
 
         function tocarMusica() {
-            musica.play().catch(() => {});
+            musica.play().catch(() => { });
         }
 
         // Tenta tocar imediatamente
